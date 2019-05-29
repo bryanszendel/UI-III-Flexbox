@@ -149,42 +149,46 @@ h1, h2, h3, h4, h5 {
 	margin-top: 69px;
   }
   
-  .main-content {
+  .main-content-container {
 	border-top: 1px solid black;
 	margin-top: 76px;
 	padding-top: 39px;
-  }
-  
-  .main-content .top-content {
-	padding: 0 10px;
-  }
-  
-  .main-content .top-content .text-content {
-	width: 410px;
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+  
+  .main-content-container .top-content {
+	display: flex;
+	justify-content: flex-start;
+  }
+  
+  .main-content-container .top-content .text-content {
+	display: flex;
+	flex-direction: column;
 	margin-right: 34px;
   }
   
-  .main-content .top-content .text-content:last-child {
+  .main-content-container .top-content .text-content:last-child {
 	margin-right: 0;
   }
   
-  .main-content .middle-img {
+  .main-content-container .middle-img {
 	margin-top: 45px;
   }
   
-  .main-content .bottom-content {
+  .main-content-container .bottom-content {
 	margin-top: 37px;
 	padding: 0 10px;
   }
   
-  .main-content .bottom-content .text-content {
+  .main-content-container .bottom-content .text-content {
 	width: 275px;
 	display: flex;
 	margin-right: 12px;
   }
   
-  .main-content .bottom-content .text-content:last-child {
+  .main-content-container .bottom-content .text-content:last-child {
 	margin-right: 0;
   }
   
