@@ -22,9 +22,9 @@ Once you have finished the home page using flex box module, go build the service
   * COMPLETE - Refactor the home page layout with flexbox where `inline-block` was used before.
   * COMPLETE - In your navigation elements, point the services `<a href=""></a>` to `services.html`
 
-* [ ] Services Page Build:
+* [X] Services Page Build:
   * COMPLETE - Update the title in your newly copied services page to say `Great Idea! - Services`
-  * IN PROGRESS - Using the provided [design file](design-files/services-desktop-design.png), create the services page layout using flexbox and box model.
+  * COMPLETE - Using the provided [design file](design-files/services-desktop-design.png), create the services page layout using flexbox and box model.
   * COMPLETE - Wrap the great idea logo in an anchor tag and point the `href` to `index.html`
   
   **Remember, you should continue using box model properties this whole time.  Flexbox is only used for bigger layout pieces.  You will still need content width, padding, border, and margins to succeed.**
