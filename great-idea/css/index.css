@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
   
   .nav-container {
 	display:flex;
-	/* justify-content: space-around; */
+	justify-content: space-between;
 	flex-wrap: nowrap;
   }
 
