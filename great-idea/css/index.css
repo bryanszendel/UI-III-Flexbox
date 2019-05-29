@@ -47,11 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -66,15 +61,29 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
+	display: flex;
 	width: 880px;
+	flex-wrap: wrap;
+	height: auto;
 	/* TB LR */
 	margin: 0 auto;
   }
   
   /* header */
   
+  .nav-container {
+	display:flex;
+	/* justify-content: space-around; */
+	flex-wrap: nowrap;
+  }
+
+  .upper-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 880px;
+  }
+
   header nav {
-	display: inline-block;
 	width: 691px;
 	vertical-align: top;
 	margin-top: 35px;
@@ -101,20 +110,26 @@ h1, h2, h3, h4, h5 {
   
   header .logo {
 	margin-top: 25px;
+	height: 35px;
   }
   
-  /* cta */
-  
-  .cta .cta-text {
-	display: inline-block;
-	vertical-align: top;
+  /* upper-container */
+
+  .upper-container .cta-text {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	font-size: 77px;
 	margin-top: 120px;
-	text-align: center;
+	align-items: center;
 	padding: 0px 75px;
   }
+
+  .upper-container .cta-text h1 {
+	text-align: center;
+  }
   
-  .cta .cta-text button {
+  .upper-container .cta-text button {
 	background: white;
 	vertical-align: top;
 	margin-top: 6px;
@@ -124,13 +139,13 @@ h1, h2, h3, h4, h5 {
 	cursor: pointer;
   }
   
-  .cta .cta-text button:hover {
+  .upper-container .cta-text button:hover {
 	background: black;
 	color: white;
   }
   
-  .cta img {
-	display: inline-block;
+  .upper-container img {
+	display: flex;
 	margin-top: 69px;
   }
   
@@ -146,7 +161,7 @@ h1, h2, h3, h4, h5 {
   
   .main-content .top-content .text-content {
 	width: 410px;
-	display: inline-block;
+	display: flex;
 	margin-right: 34px;
   }
   
@@ -165,7 +180,7 @@ h1, h2, h3, h4, h5 {
   
   .main-content .bottom-content .text-content {
 	width: 275px;
-	display: inline-block;
+	display: flex;
 	margin-right: 12px;
   }
   
